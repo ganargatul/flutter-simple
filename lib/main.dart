@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: PageUtama(),debugShowCheckedModeBanner: false,
+      home: PageWidgetContainer(),debugShowCheckedModeBanner: false,
     );
   }
 }
@@ -114,6 +114,25 @@ class PageUtama extends StatelessWidget {
               },
             )
           ],
+        ),
+      ),
+    );
+  }
+}
+
+class PageWidgetContainer extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: new Container(
+        color: Colors.black,
+        child: Text("My Container"),
+        width: 300.0,
+        height: 500.0,
+        alignment: Alignment.center,
+        padding: const EdgeInsets.all(20.0),
+        foregroundDecoration: new BoxDecoration(
+          color: Colors.lightGreen
         ),
       ),
     );
