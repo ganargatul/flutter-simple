@@ -215,6 +215,12 @@ class _PageGridViewState extends State<PageGridView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text("Page GridView"),
+        backgroundColor: Colors.green,
+        centerTitle: true,
+        toolbarOpacity: 0.4,
+      ),
       body: new GridView.builder(
         gridDelegate: new SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 4,
