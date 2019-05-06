@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-
+import 'PagePertama.dart';
+import 'PageKedua.dart';
+import 'PageKetiga.dart';
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -113,39 +115,6 @@ class PageUtama extends StatelessWidget {
             )
           ],
         ),
-      ),
-    );
-  }
-}
-
-class PagePertama extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: new Center(
-        child: Text("Page Pertama"),
-      ),
-    );
-  }
-}
-
-class PageKedua extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: new Center(
-        child: Text("Page Kedua"),
-      ),
-    );
-  }
-}
-
-class PageKetiga extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: new Center(
-        child: Text("Page Ketiga"),
       ),
     );
   }
