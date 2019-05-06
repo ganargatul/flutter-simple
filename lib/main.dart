@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: PageList(),debugShowCheckedModeBanner: false,
+      home: PageGridView(),debugShowCheckedModeBanner: false,
     );
   }
 }
@@ -191,6 +191,43 @@ class PageList extends StatelessWidget {
         ],
       ),
       
+    );
+  }
+}
+
+class PageGridView extends StatefulWidget {
+  @override
+  _PageGridViewState createState() => _PageGridViewState();
+}
+
+class _PageGridViewState extends State<PageGridView> {
+
+  List<int> itemgrid=new List();
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    for(int i=0;i<30;i++){
+      itemgrid.add(i);
+    }
+  }
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: new GridView.builder(
+        gridDelegate: new SliverGridDelegateWithFixedCrossAxisCount(
+          crossAxisCount: 4,
+        ),
+        itemBuilder: (BuildContext context,int index){
+          return new Card(
+            color: Colors.green,
+            child: Padding(
+              padding: const EdgeInsets.all(25),
+            ),
+          );
+        },
+      )
     );
   }
 }
