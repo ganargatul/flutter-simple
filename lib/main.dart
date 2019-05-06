@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: PageStateFull(),debugShowCheckedModeBanner: false,
+      home: PageUtama(),debugShowCheckedModeBanner: false,
     );
   }
 }
@@ -72,6 +72,80 @@ class _PageStateFullState extends State<PageStateFull> {
           onPressed:(){methodChange();} ,
           child: Text(teks)
         ),
+      ),
+    );
+  }
+}
+
+class PageUtama extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      
+      body: new Center(
+        
+        child: Column(
+          
+          children: <Widget>[
+            new MaterialButton(
+              color: Colors.lightGreen,
+              textColor: Colors.white,
+              child: Text("Page Pertama"),
+              onPressed: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context)=>PagePertama()));
+              },
+            ),
+             new MaterialButton(
+              color: Colors.lightGreen,
+              textColor: Colors.white,
+              child: Text("Page Kedua"),
+              onPressed: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context)=>PageKedua()));                
+              },
+            ),
+             new MaterialButton(
+              color: Colors.lightGreen,
+              textColor: Colors.white,
+              child: Text("Page Ketiga"),
+              onPressed: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context)=>PageKetiga()));                
+              },
+            )
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class PagePertama extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: new Center(
+        child: Text("Page Pertama"),
+      ),
+    );
+  }
+}
+
+class PageKedua extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: new Center(
+        child: Text("Page Kedua"),
+      ),
+    );
+  }
+}
+
+class PageKetiga extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: new Center(
+        child: Text("Page Ketiga"),
       ),
     );
   }
