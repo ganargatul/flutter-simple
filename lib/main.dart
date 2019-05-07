@@ -219,7 +219,17 @@ class _PageGridViewState extends State<PageGridView> {
         title: Text("Page GridView"),
         backgroundColor: Colors.green,
         centerTitle: true,
-        toolbarOpacity: 0.4,
+        // toolbarOpacity: 0.4,
+        actions: <Widget>[
+          IconButton(
+            icon: Icon(Icons.menu),
+            onPressed: (){},
+          ),
+          IconButton(
+            icon: Icon(Icons.data_usage),
+            onPressed: (){},
+          ),
+        ],
       ),
       body: new GridView.builder(
         gridDelegate: new SliverGridDelegateWithFixedCrossAxisCount(
