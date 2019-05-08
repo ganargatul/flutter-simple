@@ -4,6 +4,7 @@ import 'PageKedua.dart';
 import 'PageKetiga.dart';
 import 'PageInputWidget.dart';
 import 'PageButton.dart';
+import 'PageListArray.dart';
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -24,7 +25,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: PageButton(),debugShowCheckedModeBanner: false,
+      home: PageListArray(),debugShowCheckedModeBanner: false,
     );
   }
 }
