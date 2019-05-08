@@ -3,6 +3,7 @@ import 'PagePertama.dart';
 import 'PageKedua.dart';
 import 'PageKetiga.dart';
 import 'PageInputWidget.dart';
+import 'PageButton.dart';
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -23,7 +24,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: PageInputWidget(),debugShowCheckedModeBanner: false,
+      home: PageButton(),debugShowCheckedModeBanner: false,
     );
   }
 }
