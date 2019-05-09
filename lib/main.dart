@@ -8,6 +8,7 @@ import 'PageListArray.dart';
 import 'PageAnimation.dart';
 import 'PageSliderWidget.dart';
 import 'AlertDialog.dart';
+import 'MoviesApps.dart';
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -17,6 +18,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
+        //https://cdn.cgv.id/uploads/movie/compressed/19012900.jpg
         // This is the theme of your application.
         //
         // Try running your application with "flutter run". You'll see the
@@ -28,7 +30,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: PageAlertDialog(),debugShowCheckedModeBanner: false,
+      home: MoviesApps(),debugShowCheckedModeBanner: false,
     );
   }
 }
