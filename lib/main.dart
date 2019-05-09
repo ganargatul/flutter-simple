@@ -6,6 +6,7 @@ import 'PageInputWidget.dart';
 import 'PageButton.dart';
 import 'PageListArray.dart';
 import 'PageAnimation.dart';
+import 'PageSliderWidget.dart';
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -26,7 +27,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: PageAnimation(),debugShowCheckedModeBanner: false,
+      home: PageSliderWidget(),debugShowCheckedModeBanner: false,
     );
   }
 }
